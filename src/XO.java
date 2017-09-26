@@ -4,11 +4,11 @@
  */
 public class XO {
 
-	public static boolean getXO (String str) {
+	public static boolean getXO(String str) {
 		str = str.toLowerCase();
-	    return str.replace("x","").length() == str.replace("o","").length();
+		return str.replace("x", "").length() == str.replace("o", "").length();
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println(getXO("xoxoo"));
 	}

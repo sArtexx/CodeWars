@@ -9,18 +9,18 @@
  */
 
 public class JadenCase {
-	
+
 	public static String toJadenCase(String phrase) {
-		if (phrase != null && !phrase.isEmpty()){
+		if (phrase != null && !phrase.isEmpty()) {
 			String result = "";
 			for (String str : phrase.split(" ")) {
 				result += (str.replace(str.charAt(0), Character.toUpperCase(str.charAt(0))) + " ");
 			}
-			return result.substring(0, result.length()-1);
+			return result.substring(0, result.length() - 1);
 		}
 		return null;
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println(toJadenCase("most trees are blue"));
 	}

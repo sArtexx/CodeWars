@@ -1,3 +1,4 @@
+
 /*
  * Given an array (arr) as an argument complete the function countSmileys that should 
  * return the total number of smiling faces.
@@ -14,14 +15,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmileFaces {
-	
+
 	public static int countSmileys(List<String> arr) {
-		return (int)arr.stream().filter(x -> x.matches("[:;][-~]?[)D]")).count();   
+		return (int) arr.stream().filter(x -> x.matches("[:;][-~]?[)D]")).count();
 	}
-	
+
 	public static void main(String[] args) {
 		List<String> a = new ArrayList<String>();
-        a.add(":)"); a.add(":D"); a.add(":-}"); a.add(":-()");
+		a.add(":)");
+		a.add(":D");
+		a.add(":-}");
+		a.add(":-()");
 		System.out.println(countSmileys(a));
 	}
 }
