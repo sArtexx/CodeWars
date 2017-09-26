@@ -7,12 +7,13 @@
 import static java.util.stream.IntStream.of;
 
 public class SumExceptHighestAndLowest {
-	public static int sum(int[] numbers) {
-		return (numbers == null || numbers.length <= 2) ? 0
-				: of(numbers).sum() - of(numbers).max().getAsInt() - of(numbers).min().getAsInt();
-	}
+    public static int sum(int[] numbers) {
+        return numbers == null || numbers.length <= 2 ? 0
+                : of(numbers).sum() - of(numbers).max().getAsInt()
+                        - of(numbers).min().getAsInt();
+    }
 
-	public static void main(String[] args) {
-		System.out.println(sum(new int[] { 6, 2, 1, 8, 10 }));
-	}
+    public static void main(String[] args) {
+        System.out.println(sum(new int[] { 6, 2, 1, 8, 10 }));
+    }
 }
