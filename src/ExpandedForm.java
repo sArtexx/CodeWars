@@ -10,8 +10,7 @@ public class ExpandedForm {
         for (char ch : strNum.toCharArray()) {
             digit = Character.digit(ch, 10);
             if (digit != 0) {
-                result += (int) (digit * Math.pow(10, length - 1))
-                        + " + ";
+                result += (int) (digit * Math.pow(10, length - 1)) + " + ";
             }
             --length;
         }

@@ -14,8 +14,8 @@ public class JadenCase {
         if (phrase != null && !phrase.isEmpty()) {
             String result = "";
             for (String str : phrase.split(" ")) {
-                result += str.replace(str.charAt(0),
-                        Character.toUpperCase(str.charAt(0))) + " ";
+                result += str.replace(str.charAt(0), Character.toUpperCase(str.charAt(0)))
+                        + " ";
             }
             return result.substring(0, result.length() - 1);
         }

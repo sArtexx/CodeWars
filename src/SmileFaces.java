@@ -17,8 +17,7 @@ import java.util.List;
 public class SmileFaces {
 
     public static int countSmileys(List<String> arr) {
-        return (int) arr.stream()
-                .filter(x -> x.matches("[:;][-~]?[)D]")).count();
+        return (int) arr.stream().filter(x -> x.matches("[:;][-~]?[)D]")).count();
     }
 
     public static void main(String[] args) {
