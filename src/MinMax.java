@@ -11,7 +11,7 @@ public class MinMax {
         List<Integer> list = new ArrayList<>();
         list.add(Arrays.stream(arr).min().getAsInt());
         list.add(Arrays.stream(arr).max().getAsInt());
-        
+
         return list.stream().mapToInt(Integer::intValue).toArray();
     }
 }
